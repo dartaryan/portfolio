@@ -7,7 +7,7 @@ body {
 }
 
 svg {
-  height: 90%;
+  height: 110%;
   display: block;
   position: absolute;
   left: 70;
@@ -126,11 +126,11 @@ svg {
   --header-height: 3rem;
 
   /*===== Colors =====*/
-  --first-color: #3e0e12;
-  --first-color-dark: #2f0a0d;
-  --text-color: #524748;
-  --first-color-light: #7b6f71;
-  --first-color-lighten: #fbf9f9;
+  --first-color: #1E0060;
+  --first-color-dark: #090121;
+  --text-color: #01534D;
+  --first-color-light: #01635C;
+  --first-color-lighten: #fff;
 
   /*===== Font and typography =====*/
   --body-font: "Poppins", sans-serif;
@@ -263,7 +263,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #000;
+  background-color: #090121;
 }
 
 /*===== NAV =====*/
@@ -282,7 +282,7 @@ img {
     width: 100%;
     padding-top: 1.5rem;
     text-align: center;
-    background-color: #000;
+    background-color: #090121;
     transition: 0.4s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
@@ -393,6 +393,7 @@ img {
   grid-template-rows: repeat(2, max-content);
   align-content: space-around;
   row-gap: 2rem;
+  /* visibility: hidden; */
 }
 
 .home__data {
@@ -400,6 +401,7 @@ img {
   color: var(--first-color-lighten);
   padding-left: 1.5rem;
   z-index: var(--z-tooltip);
+  /* visibility: hidden; */
 }
 
 .home__name {
@@ -511,6 +513,10 @@ img {
   justify-self: center;
   width: 220px;
   border-radius: 0.5rem;
+
+
+
+  
 }
 
 /*===== QUALIFICATION =====*/
@@ -822,7 +828,8 @@ img {
   .qualification__container,
   .services__container,
   .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
   }
 
   .contact__form {
