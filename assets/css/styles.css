@@ -570,8 +570,8 @@ img {
 .qualification__container {
   row-gap: 2.5rem;
   display:flex;
-  flex-direction: row;
-  flex:1;
+  flex-direction: column;
+
 }
 
 .qualification__title {
