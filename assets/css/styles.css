@@ -724,8 +724,12 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
-/*===== TESTIMONIAL =====*/
-.testimonial__content {
+
+
+
+
+/*===== EXPERIENCE =====*/
+.experience__content {
   display: grid;
   background-color: var(--first-color-dark);
   color: var(--first-color-lighten);
@@ -733,9 +737,10 @@ img {
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(47, 10, 13, 0.25);
+  
 }
 
-.testimonial__img {
+.experience__img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -743,11 +748,21 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.testimonial__client {
+.experience__client {
   font-size: var(--small-font-size);
   color: var(--first-color-light);
   margin-bottom: var(--mb-2);
 }
+
+.experience__client:hover {
+  color: var(--first-color-lighten);
+  transition: 0.3s;
+  /* margin: 0.3rem; */
+  /* font-size: var(--normal-font-size); */
+  border-radius: var(--mb-1);
+  
+}
+
 
 .swiper-pagination {
   position: initial;
