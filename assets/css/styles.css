@@ -748,13 +748,13 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.experience__client {
-  font-size: var(--small-font-size);
+.experience__name {
+  font-size: var(--normal-font-size);
   color: var(--first-color-light);
   margin-bottom: var(--mb-2);
 }
 
-.experience__client:hover {
+.experience__name:hover {
   color: var(--first-color-lighten);
   transition: 0.3s;
   /* margin: 0.3rem; */
