@@ -107,10 +107,10 @@ const swiper = new Swiper(".experience__container", {
 
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 });
