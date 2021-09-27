@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /*===== VARIABLES CSS =====*/
-body {
-  background: #1E0060;
-}
+
 
 svg {
   height: 110%;
@@ -535,9 +533,7 @@ img {
 .button-link:hover {
   background: none;
 }
-/*===== ABOUT =====*/
-
-
+/*===={= ABOUT =====*/
 
 
 .about__data {
@@ -731,14 +727,18 @@ img {
 /*===== EXPERIENCE =====*/
 .experience__content {
   display: grid;
-  background-color: var(--first-color-dark);
+  /* background-color: var(--first-color-dark); */
   color: var(--first-color-lighten);
   border-radius: 0.5rem;
   padding: 2rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(47, 10, 13, 0.25);
+  /* box-shadow: 0 4px 8px rgba(47, 10, 13, 0.25); */
+  
+
   
 }
+
+
 
 .experience__img {
   width: 180px;
@@ -746,6 +746,7 @@ img {
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
+  transition: transform 0.5s ease-out;
 }
 
 .experience__name {
@@ -762,12 +763,13 @@ img {
 
 }
 .experience__content:hover .experience__img {
-  width: 230px;
-  height: 230px;
-  border-radius: 5%;
+  /* width: 230px;
+  height: 230px; */
+  border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
-  transition: 0.3s;
+	transform: scale(1.1);
+	transition-duration: 0.4s;
 
 }
 
