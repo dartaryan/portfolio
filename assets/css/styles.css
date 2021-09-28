@@ -704,7 +704,7 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: max(10rem, 30vh);
+  max-height:6rem;
 
 }
 
@@ -948,6 +948,9 @@ margin-top: 10px;
     
   }
 
+  .portfolio__img{
+    max-height:20vh;
+  }
 
     .contact__content {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -1026,6 +1029,11 @@ margin-top: 10px;
   .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .portfolio__img{
+    max-height:30vh;
+  }
+
   .project__container {
     padding: 1.5rem 0;
     /* margin: 5rem; */
