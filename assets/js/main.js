@@ -58,6 +58,7 @@ function scrollHeader() {
 
 window.addEventListener("scroll", scrollHeader);
 
+
 /*===== SHOW SCROLL TOP =====*/
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
