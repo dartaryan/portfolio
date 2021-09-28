@@ -465,6 +465,12 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+.typing{
+
+  color: #F1C509;
+
+}
+
 .home__img {
   position: absolute;
   right: 0;

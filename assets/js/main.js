@@ -94,6 +94,15 @@ function activePortfolio() {
 
 linkPortfolio.forEach((l) => l.addEventListener("click", activePortfolio));
 
+/*===== TYPING ANIMATION =====*/
+var typed = new Typed(".typing",{
+  strings:["Python", "JavaScript", "HTML", "CSS", "VBA", "C", "Software"],
+  typeSpeed: 200,
+  backspeed: 120,
+  loop: true
+})
+
+
 /*===== SWIPER CAROUSEL =====*/
 const swiper = new Swiper(".experience__container", {
   spaceBetween: 16,
