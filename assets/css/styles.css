@@ -787,7 +787,7 @@ img {
 .experience__content:hover .experience__img {
   /* width: 230px;
   height: 230px; */
-  border-radius: 50%;
+  border-radius: 10%;
   justify-self: center;
   margin-bottom: var(--mb-1);
 	transform: scale(1.1);

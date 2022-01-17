@@ -58,7 +58,6 @@ function scrollHeader() {
 
 window.addEventListener("scroll", scrollHeader);
 
-
 /*===== SHOW SCROLL TOP =====*/
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
@@ -96,13 +95,21 @@ function activePortfolio() {
 linkPortfolio.forEach((l) => l.addEventListener("click", activePortfolio));
 
 /*===== TYPING ANIMATION =====*/
-var typed = new Typed(".typing",{
-  strings:["Python", "JavaScript", "HTML", "CSS", "VBA", "C", "Software"],
+var typed = new Typed(".typing", {
+  strings: [
+    "Angular",
+    "Python",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "VBA",
+    "C",
+    "Software",
+  ],
   typeSpeed: 200,
   backspeed: 120,
-  loop: true
-})
-
+  loop: true,
+});
 
 /*===== SWIPER CAROUSEL =====*/
 const swiper = new Swiper(".experience__container", {
@@ -128,8 +135,36 @@ const swiper = new Swiper(".experience__container", {
 
 gsap.from(".home__img", { opacity: 0, duration: 2, delay: 0.5, x: 60 });
 gsap.from(".home__data", { opacity: 0, duration: 2, delay: 0.8, y: 25 });
-gsap.from(".home__greeting, .home__name, .home__profession, .home__button", { opacity: 0, duration: 2, delay: 1, y: 25, ease:'expo.out',stagger:.2 });
+gsap.from(".home__greeting, .home__name, .home__profession, .home__button", {
+  opacity: 0,
+  duration: 2,
+  delay: 1,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
 
-gsap.from(".nav__logo,.nav__toggle", { opacity: 0, duration: 2, delay: 1.5, y: 25, ease:'expo.out',stagger:.2 });
-gsap.from(".nav__item", { opacity: 0, duration: 2, delay: 1.8, y: 25, ease:'expo.out',stagger:.2 });
-gsap.from(".home__social-icon", { opacity: 0, duration: 2, delay: 2.3, y: 25, ease:'expo.out',stagger:.2 });
+gsap.from(".nav__logo,.nav__toggle", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.5,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".nav__item", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.8,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".home__social-icon", {
+  opacity: 0,
+  duration: 2,
+  delay: 2.3,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
